@@ -1,0 +1,1 @@
+Imagine we had a file called myfile.txt which is a standard text file. On each line we have a new item we’d like to read so that our app can do something with it. Here’s how we do that:
