@@ -10,6 +10,7 @@
 #import "UITextFieldOneSizeBorder.h"
 #import "JPToItemTCell.h"
 #import "ToDoCategoryViewController.h"
+#import "UIUnderlineView.h"
 
 
 
@@ -19,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *prioritySegmentedControl;
 @property (weak, nonatomic) IBOutlet UILabel *listTitle;
 @property (weak, nonatomic) IBOutlet UILabel *reminderDate;
+@property (weak, nonatomic) IBOutlet UIUnderlineView *reminderViewContainer;
 
 
 @end
@@ -38,6 +40,7 @@
 }
 
 
+
 - (IBAction)didClickOnDone:(id)sender {
     NSString *title = self.toDoItemTitle.text;
     TODOPriorty priority = NONE;
@@ -52,11 +55,13 @@
         reminder = nil;
         
     }
-    NSLog(@"%ld", (long)priority);
+    
     ToDoItem *newItemToAdd = [[[ToDoItem alloc]init]initWithTitle:title :self.prioritySegmentedControl.selectedSegmentIndex :listTitle : reminder];
+  
     
     [self dismissViewControllerAnimated:YES completion:^(){
         if (_isNewItem) {
+            newItemToAdd.isComplete = _item.isComplete;
             [self.delegate didAddNewItem:newItemToAdd];
         }else {
             
@@ -75,6 +80,9 @@
     [super viewDidLoad];
     [self.prioritySegmentedControl setSelectedSegmentIndex:2];
     self.toDoItemTitle.delegate = self;
+    [self.toDoItemTitle becomeFirstResponder];
+    
+    self.reminderViewContainer.hidden = YES;
    
     if (_isNewItem) {
         self.reminderSwitch.on = NO;

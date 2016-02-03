@@ -55,6 +55,7 @@
 		55E381B61C5FE53B00E40777 /* ToDoCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E381B51C5FE53B00E40777 /* ToDoCategoryViewController.m */; };
 		55F6A9651C60E9C500703BF5 /* DropDownViewControllerAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F6A9641C60E9C500703BF5 /* DropDownViewControllerAnimator.m */; };
 		55F6A9681C60EA1C00703BF5 /* OverlayPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F6A9671C60EA1C00703BF5 /* OverlayPresentationController.m */; };
+		55F6A9981C61217E00703BF5 /* ToDoCategoryCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F6A9971C61217E00703BF5 /* ToDoCategoryCellTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -157,6 +158,8 @@
 		55F6A9641C60E9C500703BF5 /* DropDownViewControllerAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownViewControllerAnimator.m; sourceTree = "<group>"; };
 		55F6A9661C60EA1C00703BF5 /* OverlayPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayPresentationController.h; sourceTree = "<group>"; };
 		55F6A9671C60EA1C00703BF5 /* OverlayPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayPresentationController.m; sourceTree = "<group>"; };
+		55F6A9961C61217E00703BF5 /* ToDoCategoryCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoCategoryCellTableViewCell.h; sourceTree = "<group>"; };
+		55F6A9971C61217E00703BF5 /* ToDoCategoryCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoCategoryCellTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -347,6 +350,8 @@
 				55E3817B1C5D692A00E40777 /* JPToItemTCell.m */,
 				558B327F1C600D8D0032A190 /* ToDoCategoryCell.h */,
 				558B32801C600D8D0032A190 /* ToDoCategoryCell.m */,
+				55F6A9961C61217E00703BF5 /* ToDoCategoryCellTableViewCell.h */,
+				55F6A9971C61217E00703BF5 /* ToDoCategoryCellTableViewCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -557,6 +562,7 @@
 				555D3B361C591E6B00B31C90 /* AppDelegate.m in Sources */,
 				55E381A41C5F141800E40777 /* BaseViewController.m in Sources */,
 				55E3818B1C5DA71000E40777 /* UITextFieldOneSizeBorder.m in Sources */,
+				55F6A9981C61217E00703BF5 /* ToDoCategoryCellTableViewCell.m in Sources */,
 				55E381AA1C5F184500E40777 /* BaseToMenuSegue.m in Sources */,
 				55E381B31C5FC6E500E40777 /* HowToViewController.m in Sources */,
 				55E3819F1C5EA0DD00E40777 /* DataWriter.m in Sources */,

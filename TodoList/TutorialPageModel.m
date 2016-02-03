@@ -12,7 +12,7 @@
 
 +(NSArray *)allPages {
     
-    TutorialPageModel *page0 = [[TutorialPageModel alloc]initWithIndex:0 title:@"To Do App" subtitle:@"Add, Edit ,and Save your To Do List"];
+    TutorialPageModel *page0 = [[TutorialPageModel alloc]initWithIndex:0 title:@"2DoList" subtitle:@"Add, Edit ,and Save your To Do List"];
     TutorialPageModel *page1 = [[TutorialPageModel alloc]initWithIndex:1 title:@"Add or Edit" subtitle:@"To Add or Edit , click on add bottom to new or edit bottom to edit exiting task"];
 
     TutorialPageModel *page2 = [[TutorialPageModel alloc]initWithIndex:2 title:@"Read or Write to Xml" subtitle:@"To save data ,click on save toolbar button or App will autometically save your save on you exit from the app"];

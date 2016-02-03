@@ -55,6 +55,8 @@
 #pragma mark : filter
 
 -(NSMutableArray *)filterWithKey:(NSString *)key {
+    
+    NSMutableArray *result = [[NSMutableArray alloc]init];
     if ([key isEqualToString:@"complete"]) {
         NSPredicate *completePred = [NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
             ToDoItem *item = (ToDoItem *)evaluatedObject;
@@ -62,6 +64,7 @@
         }];
         
         NSArray * filteredArray = [self.toDoItemList filteredArrayUsingPredicate:completePred];
+        [result addObjectsFromArray:filteredArray];
         NSLog(@"HERE %@",filteredArray);
         
     }
@@ -73,9 +76,11 @@
         
         NSArray * filteredArray = [self.toDoItemList filteredArrayUsingPredicate:pending];
         NSLog(@"HERE %@",filteredArray);
+        [result addObjectsFromArray:filteredArray];
+
         
     }
-    return [[NSMutableArray alloc]init];
+    return result;
 }
 
 #pragma mark : get item at index

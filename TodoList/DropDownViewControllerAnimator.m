@@ -25,12 +25,12 @@
     [containerView addSubview:presentedView];
     
     CGAffineTransform transform = presentedView.transform;
-    presentedView.transform = CGAffineTransformTranslate(transform, 0, -containerView.bounds.size.height);
+    presentedView.transform = CGAffineTransformTranslate(transform, 0, +containerView.bounds.size.height);
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext]
                           delay:0
-         usingSpringWithDamping:0.6
-          initialSpringVelocity:10
+         usingSpringWithDamping:0.8
+          initialSpringVelocity:0.0
                         options:0
                      animations:^{
                          presentedView.transform = transform;
